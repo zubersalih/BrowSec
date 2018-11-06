@@ -2,8 +2,8 @@
 - BrowSec is a POC(Proof-Of-Conecept) tool that demonstrates what can a malware do to your (Chromium) Based Browser .
 - most of the POC this tool implemented is publicly released techniques.
 - all of them were reported and google security team denied to fix them and their reason is "if the attacker have (physical) access to your machine they can do worse.
-- i will try to add support for **Android , OSX, Linux**
-# 1 Password Stealer
+- i will try to add support for **Android , OSX, Linux**.
+# 1. Password Stealer
 
 - Chrome or any other Chromium based browser's stores "Saved Password" in a local sqlite database file and the password value is 
 encrypted and decrypted
@@ -50,6 +50,6 @@ CryptProtectData(
  - as you can see they are passing the ```entropy``` parameter as ```null``` which means anybody with access to the machine can decrypt the 
  encrypted data even if they(Google) passed a private key to that parameter they still have to store it somewhere but can only be decrypted locally.
 - so anybody can just retrieve the ```password_value``` and decrypt it by using the same DPAPI.H function's ```CryptUnProtectData({...```
-# 2 :wink: :wink: will be released after some hours
+# 2. :wink: :wink: will be released after some hours
 # Future Works
-[ ] It's a surprise
+- [ ] It's a surprise
